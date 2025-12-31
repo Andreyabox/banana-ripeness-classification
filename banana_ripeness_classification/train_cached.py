@@ -1,7 +1,8 @@
 import subprocess
+from pathlib import Path
+
 import lightning as L
 from lightning.pytorch.loggers import MLFlowLogger
-from pathlib import Path
 from omegaconf import DictConfig
 from torch.utils.data import DataLoader
 
@@ -23,7 +24,7 @@ def get_git_commit_id() -> str:
 
 def train_cached(cfg: DictConfig):
     """
-        cfg: Полная конфигурация Hydra
+    cfg: Полная конфигурация Hydra
     """
     cache_path = Path(cfg.preprocessing.cache_dir)
     batch_size = cfg.train.batch_size
