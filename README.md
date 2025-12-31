@@ -47,8 +47,12 @@ uv sync
 
 ### 2.3 Настройка DVC и получение данных:
 
-Данные скачиваются автоматически при первом запуске обучения! **Как это
-работает:**
+Данные скачиваются автоматически при первом запуске обучения. Нужно только ввести
+ключи для доступа
+```bash
+  dvc remote modify --local storage access_key_id ВАШ_KEY_ID
+  dvc remote modify --local storage secret_access_key ВАШ_SECRET_KEY
+```
 
 - В `cache_features.py` вызывается команда `dvc pull`
 - DVC автоматически загружает файлы и папки в папку `data/` из S3/Yandex Object
@@ -75,6 +79,8 @@ uv run pre-commit run --all-files
 .venv\Scripts\activate
 python commands.py command=cache-features
 ```
+
+Работает, если есть папки train, validation, test с изображениями в папке data.
 
 ### 3.2 Запуск обучения модели
 
