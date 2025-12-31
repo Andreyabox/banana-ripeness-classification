@@ -1,0 +1,5 @@
+[core]
+    remote = yandex-remote
+['remote "yandex-remote"']
+    url = s3://banana-ripeness-classification-dataset
+    endpointurl = https://storage.yandexcloud.net
