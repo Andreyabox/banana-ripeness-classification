@@ -1,0 +1,3 @@
+save_dir: "models"
+model_filename: "banana_classifier.pt"
+export_onnx: false

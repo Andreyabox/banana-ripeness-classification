@@ -1,0 +1,3 @@
+name: "CachedCLIPClassifier"
+lr: 1e-3
+# hidden_size and num_classes are usually determined from data

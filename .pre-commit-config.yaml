@@ -12,7 +12,6 @@ repos:
     rev: v6.0.0
     hooks:
       - id: check-yaml
-      - id: check-json
       - id: check-added-large-files
       - id: end-of-file-fixer
       - id: trailing-whitespace

@@ -1,0 +1,9 @@
+defaults:
+  - preprocessing: default
+  - model: default
+  - train: default
+  - postprocessing: default
+  - mlflow: default
+  - _self_
+
+command: "train-cached"

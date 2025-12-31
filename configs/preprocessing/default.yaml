@@ -1,0 +1,5 @@
+data_dir: "data"
+cache_dir: "cached_features"
+batch_size: 32
+model_name: "openai/clip-vit-base-patch32"
+device: "auto"
